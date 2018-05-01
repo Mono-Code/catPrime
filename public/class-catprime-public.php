@@ -76,7 +76,8 @@ class Catprime_Public {
 	    // handle relation logic if applied
 	    if( isset( $query->query[ 'primary_term' ]['relation'] ) ){
 
-	        $primary_array[]['relation'] = $query->query[ 'primary_term' ]['relation'];
+	        $primary_array['relation'] = $query->query[ 'primary_term' ]['relation'];
+
 	        unset( $query->query[ 'primary_term' ]['relation'] );
 
         }
